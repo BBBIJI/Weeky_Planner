@@ -1,4 +1,2 @@
 # Weeky_Planner
-We have decided to make a website for personal daily life, a weekly planner. A website to mark important schedules and events of the week so we can set our priorities of the day.
-
-help people maintain their personal tasks. schedule their personal appointments
+An online weekly planner for personal daily life. A website to mark important schedules and events of the week so we can set our priorities of the day to help people maintain their personal tasks and schedule their personal appointments. This project is coded in PHP, HTML, MySQL
