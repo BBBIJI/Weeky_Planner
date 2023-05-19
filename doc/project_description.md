@@ -4,6 +4,6 @@ our functionality is to help people maintain their personal tasks and schedule t
 
 UI: HTML + CSS
 Functions: PHP
-Database: Mysql
+Database: MySQL
 
 In our website, there will be a part where you can input event name, date+time. The output will be shown in a section bellow the input button. There will also be a delete button where you can click to delete your previous events.
