@@ -1,6 +1,13 @@
-Our project is to make a weekly planner. Our project goal is to make a website to mark important schedules and events of the week so we can set our priorities of the day.
+Our project is to make a weekly planner. 
+Our goal: 
+- a website to mark important schedules and events of the week so we can set our priorities of the day.
+- Our aim is to help people maintain their personal tasks and schedule their personal appointments.
 
-our functionality is to help people maintain their personal tasks and schedule their personal appointments
+Our functionality: 
+- User Authentication: a login procedure to allow user to access the website.
+- Weekly Planner: allow user to organize their own activities, tasks, and events for the entire week.
+
+Architecture:
 
 UI: HTML + CSS
 
