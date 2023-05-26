@@ -9,7 +9,7 @@ Our functionality:
 
 Architecture:
 
-UI: HTML + CSS
+UI: HTML + Javascript + CSS
 
 Functions: PHP
 
