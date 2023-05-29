@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>REGISTER FORM</h1></head>
+
+    <body>
+        <form name="rf" action = "Register.php" onsubmit = "return validateregister()" method = "post">
+            <label for = "Username">Username</label><br>
+            <input type = "text" id = "Username" name = "Username"><br>
+            <label for = "Password">Password</label><br>
+            <input type = "password" id = "Password" name = "Password"><br>
+            <label for = "Password2">Re-Enter Password</label><br>
+            <input type = "password" id = "Password2" name = "Password2"><br>
+            <input type="submit" value = "Confirm">
+        </form>
+
+        <script>
+            function validateregister(){
+                var rid=document.rf.Username.value;
+                var rps=document.rf.Password.value;
+                var rps2=document.rf.Password2.value;
+
+            if(rps.length=="" && rid.length==""&&rps2==""){
+                alert("Empty Input");
+                return false;
+            }else if(rid.length==""){
+                alert("Username cannot be empty");
+                return false;
+            }else if(rps.length==""){
+                alert("Password cannot be empty");
+                return false;
+            }else if(rps2.length==""){
+                alert("Haven't re-entered Password");
+                return false;
+            }else if(rps!=rps2){
+                alert("Passwords not the same");
+                return false;
+            }
+            }
+        </script>
+    </body>
+</html>
