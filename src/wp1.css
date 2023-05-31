@@ -222,3 +222,8 @@ top: 1cm;
     transform:translate(-50%,-50%)scale(0.1);
     
 }
+
+.box{
+    margin: 40px 100px 120px 80px;
+    text-align:center;
+}

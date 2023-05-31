@@ -16,7 +16,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
 if($count == 1){
-    header("Location: wp.html");
+    header("Location: wp.php");
     die();
 }else{
     echo "<h1><center>Login Failed</center></h1>";
