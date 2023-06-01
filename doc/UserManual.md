@@ -14,14 +14,14 @@ A login page will appear.
 Once registration is finished shows message "registration success", and a button will show which if you click it will send you back to the login page.
 
 5. After you logged in, you will see the weekly planner website
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/bc360de1-a72f-487a-b51c-3e94e24e77c6)
+<img width="947" alt="Screenshot 2023-06-01 231839" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/b48d17d5-2f39-40d0-acde-29354d596da6">
 
 6. to Add an event into the boxes below, simply click the add button
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/3a297001-2293-441f-acd2-8a141dae9542)
+<img width="949" alt="Screenshot 2023-06-01 231942" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/c199ce01-3480-4035-8224-889ce903bf1d">
 a popup will appear
 
 7. enter your information, and then press submit
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/d7e6adba-8d51-407e-8641-f7ad776fc1c4)
+<img width="948" alt="Screenshot 2023-06-01 232022" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/e92f934f-2e33-48fa-924e-2729762c3b0d">
 the layout is as the following
 
 8. to delete just simply click the "DELETE ALL" and all the events will be deleted(single event delete function coming soon).
