@@ -11,7 +11,7 @@ A login page will appear.
 
 4. Enter account information
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/8bd0fb87-fcdd-42e5-8c0e-4c79ffb0e94d)
-Once registration is finished you can go back to login page either by typing localhost/LoginPage.html again or just going back to previous pages usiing browser functionality.
+Once registration is finished shows message "registration success", and a button will show which if you click it will send you back to the login page.
 
 5. After you logged in, you will see the weekly planner website
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/bc360de1-a72f-487a-b51c-3e94e24e77c6)
