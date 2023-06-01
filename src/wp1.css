@@ -1,3 +1,6 @@
+body{
+    background-image:url('rumah.jpg');
+}
 .div1{
     position: relative;
     bottom:1cm;
@@ -11,7 +14,7 @@
 .Logo{
    font-family:"Lucida Handwriting";
    font-size:xxx-large;
-   color: #4df2f286;
+   color: #318dda86;
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
    text-align: center;
@@ -22,7 +25,7 @@
  font-family:Georgia, 'Times New Roman', Times, serif;   
  font-size: medium;
 background-color:#c94eb286;
-color: rgba(46, 123, 123, 0.895);
+color: black;
 cursor:pointer;
 border-radius: 5px;
 height: 0.70cm;
@@ -195,13 +198,13 @@ top: 1cm;
     top: 0cm;
     right:0cm;
     border-radius:6px;
-    width:8cm ;
-    height:5cm;
+    width: 6cm; 
+    height: 4cm;
     border-style:solid;
     border-color: black;
     border-width:0.03cm;
     transform:translate(-50%,-50%)scale(0.1);
-    background-color:rgba(106, 228, 144, 0.616);
+    background-color: bisque;
     text-align:left ;
     visibility: hidden;
     transition: transform 0.4s,top 0.4s;
@@ -219,11 +222,10 @@ top: 1cm;
    transition:transform 0.4s,top 0.4s ;
     top:0cm;
     right:0cm;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 500;
     transform:translate(-50%,-50%)scale(0.1);
-    
-}
 
-.box{
-    margin: 40px 100px 120px 80px;
-    text-align:center;
+ 
 }
