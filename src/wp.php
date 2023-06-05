@@ -91,7 +91,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
         <link rel="stylesheet" href="wp1.css"   >
         <title>weekly planner</title>
     </head>
-    <body style="background-color: #e2da6b88;">
+    <body>
      <div class="div1">
         <h1 class="Logo">Weekly Planner</h1>
         <button type="button"class="item-addtask" onclick="openPopup()">Add</button><br><br>
