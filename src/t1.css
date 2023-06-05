@@ -1,0 +1,267 @@
+@import url(//db.onlinewebfonts.com/c/29f4c6fe36801450398679968448cf3d?family=Super+Mario+Bros.);
+
+
+body{
+  margin: 1;
+  padding:0;
+  background-image: url(wpw1111.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+ 
+                                  
+
+}
+
+.div1{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1px;
+}
+
+.div2 {
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+  margin-top: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.colomn2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.item-addtask {
+  margin-right: 90vh;
+  width: 10vh;
+  background-color: rgb(128, 200, 21);
+
+}
+
+p {
+  font-family: "super";
+}
+
+.delete-item {
+  margin-left: 90vh;
+  background-color: rgb(128, 200, 21);
+}
+
+@font-face {
+  font-family: super;
+  src: url(SuperMario256.ttf);
+}
+
+.Logo {
+  color: rgba(255, 0, 0, 0.731);
+  font-family: "super";
+  font-size: xxx-large;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-shadow: 1px 1px 1px black,
+          1px 2px 1px black,
+          1px 3px 1px black,
+          1px 4px 1px black,
+          1px 5px 1px black,
+          1px 6px 1px black,
+          1px 7px 1px black,
+          1px 8px 1px black,
+          1px 9px 1px black,
+          1px 10px 1px black;
+          
+
+
+}
+
+.monday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+  
+  
+  
+}
+
+.header-monday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+ 
+  border-radius: 10vh;
+ 
+}
+
+.tuesday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+}
+
+.header-tuesday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.wednesday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+}
+
+.header-wednesday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.thursday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+}
+
+.header-thursday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.friday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+}
+
+.header-friday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.saturday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+}
+
+.header-saturday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.sunday {
+  width: 30vh;
+  height: 45vh;
+  max-height: max-content;
+
+}
+
+.header-sunday {
+  padding:2vh;
+  font-size: large;
+  font-family: "super";
+  text-align: center;
+  background-color:#f38158;
+  
+  border-radius: 10vh;
+}
+
+.popup {
+  visibility: hidden;
+  justify-content: center;
+  min-height: 20rem;
+  max-width: 20rem;
+  border-style: solid;
+  border-color: #966F33;
+  border-radius: 100px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    max-width: 90%;
+  }
+}
+
+input {
+  display: block;
+  border: solid rgba(241, 51, 51, 0.863);
+  width: 95%;
+  padding: 10px auto;
+  margin: 10px auto;
+  border-radius: 7px;
+}
+select{
+  display: block;
+  border: solid rgba(241, 51, 51, 0.863);
+  width: 95%;
+  padding: 10px auto;
+  margin: 10px auto;
+  border-radius: 7px;
+
+}
+
+.closepopup {
+  font-family: "super mario 256";
+}
+
+.container#blur.active {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+
+
+.popup form {
+  font-family: "super mario 256";
+  text-align: center;
+  padding: 70px;
+ 
+}
+
+
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  
+}
