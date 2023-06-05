@@ -181,7 +181,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
 
   </div>
   <div class="popup" id="popup">
-    <form>
+     <form method = "post" action="AddEvent.php">
       <label for="event">Event:</label>
       <input type="text" id="event" name="event" required>
       <br>
