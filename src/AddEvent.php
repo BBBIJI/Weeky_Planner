@@ -13,7 +13,7 @@ if($conn->connect_error){
     $stmt->execute();
     $stmt->close();
     $conn->close();
-    header("Location: wp.php");
+    header("Location: t.php");
     die();
 }
 ?>
