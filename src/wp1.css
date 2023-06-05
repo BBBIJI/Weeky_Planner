@@ -31,6 +31,17 @@ position: relative;
 left:15cm;
 top: 1cm;
 }
+.item-del_input{
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+    font-size: medium;
+   cursor:pointer;
+   border-radius: 5px;
+   height: 0.70cm;
+   width:3cm;
+   text-align:center;
+   left:15cm;
+   top: 1cm;
+   }
 .item-addtask:hover{
     opacity:0.8;
 }

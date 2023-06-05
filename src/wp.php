@@ -3,6 +3,7 @@ session_start();
 $event = "";
 $day = "";
 $time = "";
+$del_single = "";
 
 $conn = mysqli_connect('localhost','root','','user');
 
@@ -14,43 +15,43 @@ if (!$conn)
     exit;
 }
 
-$query_monday = 'SELECT event,time,day
+$query_monday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "monday"
 ORDER BY time';
 $result_monday = mysqli_query($conn, $query_monday);
 
-$query_tuesday = 'SELECT event,time,day
+$query_tuesday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "tuesday"
 ORDER BY time';
 $result_tuesday = mysqli_query($conn, $query_tuesday);
 
-$query_wednesday = 'SELECT event,time,day
+$query_wednesday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "wednesday"
 ORDER BY time';
 $result_wednesday = mysqli_query($conn, $query_wednesday);
 
-$query_thursday = 'SELECT event,time,day
+$query_thursday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "thursday"
 ORDER BY time';
 $result_thursday = mysqli_query($conn, $query_thursday);
 
-$query_friday = 'SELECT event,time,day
+$query_friday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "friday"
 ORDER BY time';
 $result_friday = mysqli_query($conn, $query_friday);
 
-$query_saturday = 'SELECT event,time,day
+$query_saturday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "saturday"
 ORDER BY time';
 $result_saturday = mysqli_query($conn, $query_saturday);
 
-$query_sunday = 'SELECT event,time,day
+$query_sunday = 'SELECT ID,event,time,day
 FROM schedule
 WHERE day = "sunday"
 ORDER BY time';
@@ -70,7 +71,13 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
     die();
 }
 
-
+if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
+    $del_single = $_GET['del_input'];
+    $deletesingle="DELETE FROM schedule WHERE schedule.ID = $del_single";
+    $result_del_single = mysqli_query($conn, $deletesingle);
+    header("Location: wp.php");
+    die();
+}
 ?>
 
 
@@ -89,7 +96,9 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
         <h1 class="Logo">Weekly Planner</h1>
         <button type="button"class="item-addtask" onclick="openPopup()">Add</button><br><br>
         <form method="get">
-        <input class="item-addtask" type="submit" name = "btn_del" id="btn_del" value="DELETE ALL">
+        <input class="item-addtask" type="submit" name = "btn_del" id="btn_del" value="DELETE ALL"><br><br>
+        <input class="item-del_input" type="text" id="del_input" name="del_input">
+        <input class="item-addtask" type="submit" name = "btn_del_single" id="btn_del_single" value="DELETE">
         </form>
     </div>  
 
@@ -98,14 +107,16 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
         <div class="monday">
            <div class="header-monday">Monday</div>
            <?php while($record = mysqli_fetch_assoc($result_monday)){
-                 echo $record['event'].'<br>';
-                  echo $record['time'].'<br>';
-                  echo '====================<br>';}?>
+                echo $record['ID'].'<br>';
+                echo $record['event'].'<br>';
+                echo $record['time'].'<br>';
+                echo '====================<br>';}?>
 
         </div>
         <div class="tuesday">
             <div class="header-tuesday">Tuesday</div>
             <?php while($record = mysqli_fetch_assoc($result_tuesday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?>
@@ -114,6 +125,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
          <div class="wendesday">
             <div class="header-wendesday">Wednesday</div>
             <?php while($record = mysqli_fetch_assoc($result_wednesday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?> 
@@ -122,6 +134,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
          <div class="thursday">
             <div class="header-thursday">Thursday</div>
             <?php while($record = mysqli_fetch_assoc($result_thursday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?>
@@ -130,6 +143,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
          <div class="friday">
             <div class="header-friday">Friday</div>
             <?php while($record = mysqli_fetch_assoc($result_friday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?>
@@ -138,6 +152,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
          <div class="saturday">
             <div class="header-saturday">Saturday</div> 
             <?php while($record = mysqli_fetch_assoc($result_saturday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?>
@@ -146,6 +161,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del'])){
          <div class="sunday">
             <div class="header-sunday">Sunday</div> 
             <?php while($record = mysqli_fetch_assoc($result_sunday)){
+                echo $record['ID'].'<br>';
                 echo $record['event'].'<br>';
                 echo $record['time'].'<br>';
                 echo '====================<br>';}?>
