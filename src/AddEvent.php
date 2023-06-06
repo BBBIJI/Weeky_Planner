@@ -13,7 +13,7 @@ if($conn->connect_error){
     $stmt->execute();
     $stmt->close();
     $conn->close();
-    header("Location: t.php");
+    header("Location: project1.php");
     die();
 }
 ?>

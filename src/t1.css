@@ -1,3 +1,4 @@
+
 @import url(//db.onlinewebfonts.com/c/29f4c6fe36801450398679968448cf3d?family=Super+Mario+Bros.);
 
 
@@ -27,21 +28,28 @@ body{
 .div2 {
   display: grid;
   grid-template-columns: repeat(7, 2fr);
-  margin-top: 20vh;
+  margin-top: 10vh;
   justify-content: center;
   align-items: center;
 }
+.colomn{
+  text-align: center;
+}
 
 .colomn2 {
-  display: flex;
-  justify-content: space-between;
+
+  display: grid;
+  justify-content: center;
   align-items: center;
   margin-top: 5vh;
 }
 
-.item-addtask {
-  margin-right: 90vh;
-  width: 10vh;
+
+.item-addtask{
+  justify-content: center;
+  text-align: center;
+padding: 1vh;
+width:30vh;
   background-color: rgb(128, 200, 21);
 
 }
@@ -56,7 +64,7 @@ p {
 }
 
 @font-face {
-  font-family: super;
+  font-family:super;
   src: url(SuperMario256.ttf);
 }
 
@@ -117,13 +125,13 @@ p {
   border-radius: 10vh;
 }
 
-.wednesday {
+.wendesday{ 
   width: 30vh;
   height: 45vh;
   max-height: max-content;
 }
 
-.header-wednesday {
+.header-wendesday {
   padding:2vh;
   font-size: large;
   font-family: "super";
@@ -199,6 +207,10 @@ p {
 }
 
 .popup {
+  background-image: url("mushroom1.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
   visibility: hidden;
   justify-content: center;
   min-height: 20rem;
@@ -212,6 +224,7 @@ p {
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: 0.5s;
+  background-color:rgb(53, 136, 225);
 }
 
 @media screen and (max-width: 600px) {
@@ -247,19 +260,25 @@ select{
   pointer-events: none;
   user-select: none;
 }
+.container#blur.remove{
+  filter: none;
+  visibility: none;
+}
 
 
 
 .popup form {
   font-family: "super mario 256";
+  color:black;
   text-align: center;
   padding: 70px;
+  
  
 }
 
 
 
-#popup.active {
+.open-popup {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
