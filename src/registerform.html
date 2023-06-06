@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head><h1>REGISTER FORM</h1></head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="registerform.css"   >
+        <h1>REGISTER FORM</h1>
+    </head>
 
     <body>
         <form name="rf" action = "Register.php" onsubmit = "return validateregister()" method = "post">
@@ -10,7 +16,7 @@
             <input type = "password" id = "Password" name = "Password"><br>
             <label for = "Password2">Re-Enter Password</label><br>
             <input type = "password" id = "Password2" name = "Password2"><br>
-            <input type="submit" value = "Confirm">
+            <input  class="box-color1" type="submit" value = "Confirm">
         </form>
 
         <script>
@@ -38,4 +44,5 @@
             }
         </script>
     </body>
+</html>
 </html>

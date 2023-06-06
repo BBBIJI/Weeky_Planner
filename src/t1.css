@@ -7,7 +7,9 @@ body{
   padding:0;
   background-image: url(wpw7.jpg);
   background-size: cover;
-  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
  
                                   
 
@@ -29,6 +31,7 @@ body{
   margin-top: 10vh;
   justify-content: center;
   align-items: center;
+  
 }
 .colomn{
   text-align: center;
@@ -47,12 +50,31 @@ body{
   justify-content: center;
   text-align: center;
 padding: 1vh;
-width:30vh;
+width:40vh;
   background-color: rgb(128, 200, 21);
+  border-color: black;
+  border-radius: 7vh;
+  margin-right:50%;
+  border-style: solid;
+  border-width: 0.35vh;
+ 
+box-shadow: 0px 0px 0px 1px rgb(117, 248, 2);
+animation:anim-shadow .3s forwards;
 
 }
 
+@keyframes anim-shadow{
+  100%{
+    box-shadow:0px 0px 50px 20px rgba(112,111,211,0);
+  }
+}
+
+
 p {
+  font-family: "super";
+}
+
+p1{
   font-family: "super";
 }
 
@@ -69,7 +91,7 @@ p {
 .Logo {
   color: rgba(255, 0, 0, 0.731);
   font-family: "super";
-  font-size: xxx-large;
+  font-size:10vh;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
   text-shadow: 1px 1px 1px black,
@@ -102,6 +124,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
  
   border-radius: 10vh;
  
@@ -119,6 +145,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
@@ -135,6 +165,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
@@ -151,6 +185,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
@@ -167,6 +205,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
@@ -183,6 +225,10 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
@@ -200,15 +246,20 @@ p {
   font-family: "super";
   text-align: center;
   background-color:#f38158;
+  border-color: rgba(0, 0, 0, 0.897);
+  
+  border-style:solid ;
+  border-width:   0.35vh;
   
   border-radius: 10vh;
 }
 
 .popup {
-  
+  background-image: url("addtask2.jpg");
+  box-shadow: 0px 0px 40px 5px  black;
   background-position: center;
-  background-repeat: repeat;
-  background-size: auto;
+  
+  background-size: contain;
   visibility: hidden;
   justify-content: center;
   min-height: 20rem;
@@ -222,8 +273,7 @@ p {
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: 0.5s;
-  background-color:rgb(38, 117, 202);
-  
+ 
 }
 
 @media screen and (max-width: 600px) {
@@ -234,19 +284,28 @@ p {
 
 input {
   display: block;
-  border: solid rgba(241, 51, 51, 0.863);
+  border: solid rgba(0, 0, 0, 0.863);
+ 
   width: 95%;
-  padding: 10px auto;
+  
   margin: 10px auto;
   border-radius: 7px;
+  font-family: "super";
+  
+  
+  
+  
+  
 }
 select{
   display: block;
-  border: solid rgba(241, 51, 51, 0.863);
+  border: solid rgba(0, 0, 0, 0.863);
   width: 95%;
   padding: 10px auto;
   margin: 10px auto;
   border-radius: 7px;
+  font-family: "super";
+  font-size: small;
 
 }
 
@@ -285,9 +344,27 @@ select{
 }
 
 .info-box{
-  background-color: #f38158;
-  box-sizing: border-box;
-  margin-bottom: 5vh;
-  size: content;
+  border-radius: 3vh;
+ display:block;
+ 
+  padding: 2vh;
+ 
   text-align: center;
+  border-color: rgba(0, 0, 0, 0.897);
+  background-color:rgb(163, 198, 248);
+  border-style:solid ;
+  border-width:   0.35vh;
+  width:16vh;
+  margin: 2vh auto;
+ 
+
+  
+
 }
+
+.info-task{
+  font-family: "super";
+  font-size: small;
+}
+
+

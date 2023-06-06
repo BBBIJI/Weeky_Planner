@@ -79,7 +79,11 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
     header("Location: project1.php");
     die();
 }
+
+
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -89,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="t1.css"   >
+        <link rel="stylesheet" href="t1.css" type="text/css"  >
         <title>weekly planner</title>
     </head>
     <body>
@@ -99,11 +103,12 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
         <h1 class="Logo">Weekly Planner</h1>
         </div>
         <div class="colomn2">
-        <button type="button"class="item-addtask" href="#" onclick="openPopup()">Add</button><br><br>
+        <button type="button"class="item-addtask" href="#" onclick="openPopup()"><p1>Add</p1></button><br><br>
         <form method="get">
         <input class="item-addtask" type="submit" name = "btn_del" id="btn_del" value="DELETE ALL"><br><br>
         <input class="item-del_input" type="text" id="del_input" name="del_input">
-        <input class="item-addtask" type="submit" name = "btn_del_single" id="btn_del_single" value="DELETE">
+        <input class="item-addtask" href="#" onclick="clickdel()" type="submit" name = "btn_del_single" id="btn_del_single" value="DELETE">
+       
         </form>
     </div>  
      </div>
@@ -113,71 +118,79 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
         <div class="monday">
            <div class="header-monday">Monday</div>
            <?php while($record = mysqli_fetch_assoc($result_monday)){
-           
-            echo $record['ID'].'<br>';
-            echo $record['event'].'<br>';
-            echo $record['time'].'<br>';
-            }?>
+            echo '<div class="info-box">';
+            echo '<span class="info-task">' .$record['ID'].'</span><br>';
+            echo '<span class="info-task">' .$record['event'].'</span><br>';
+            echo '<span class="info-task">' .$record['time'].'</span><br>';
+            echo '</div>';}?>
            
 
         </div>
         <div class="tuesday">
             <div class="header-tuesday">Tuesday</div>
             <?php while($record = mysqli_fetch_assoc($result_tuesday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+               echo '<div class="info-box">';
+               echo '<span class="info-task">' .$record['ID'].'</span><br>';
+               echo '<span class="info-task">' .$record['event'].'</span><br>';
+               echo '<span class="info-task">' .$record['time'].'</span><br>';
+               echo '</div>';}?>
            
 
          </div>
          <div class="wendesday">
             <div class="header-wendesday">Wednesday</div>
             <?php while($record = mysqli_fetch_assoc($result_wednesday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+               echo '<div class="info-box">';
+               echo '<span class="info-task">' .$record['ID'].'</span><br>';
+               echo '<span class="info-task">' .$record['event'].'</span><br>';
+               echo '<span class="info-task">' .$record['time'].'</span><br>';
+               echo '</div>';}?>
              
 
          </div>
          <div class="thursday">
             <div class="header-thursday">Thursday</div>
             <?php while($record = mysqli_fetch_assoc($result_thursday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+                 echo '<div class="info-box">';
+                 echo '<span class="info-task">' .$record['ID'].'</span><br>';
+                echo '<span class="info-task">' .$record['event'].'</span><br>';
+                echo '<span class="info-task">' .$record['time'].'</span><br>';
+                 echo '</div>';}?>
         
 
          </div>
          <div class="friday">
             <div class="header-friday">Friday</div>
             <?php while($record = mysqli_fetch_assoc($result_friday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+             echo '<div class="info-box">';
+             echo '<span class="info-task">' .$record['ID'].'</span><br>';
+             echo '<span class="info-task">' .$record['event'].'</span><br>';
+             echo '<span class="info-task">' .$record['time'].'</span><br>';
+             echo '</div>';}?>
           
 
          </div>
          <div class="saturday">
             <div class="header-saturday">Saturday</div> 
             <?php while($record = mysqli_fetch_assoc($result_saturday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+                echo '<div id="infobox" class="info-box">';
+                echo '<span class="info-task">' .$record['ID'].'</span><br>';
+                echo '<span class="info-task">' .$record['event'].'</span><br>';
+                echo '<span class="info-task">' .$record['time'].'</span><br>';
+               
+                echo '</div>';}?>
+                
           
 
          </div>
          <div class="sunday">
             <div class="header-sunday">Sunday</div> 
             <?php while($record = mysqli_fetch_assoc($result_sunday)){
-                echo $record['ID'].'<br>';
-                echo $record['event'].'<br>';
-                echo $record['time'].'<br>';
-                echo '====================<br>';}?>
+               echo '<div class="info-box">';
+               echo '<span class="info-task">' .$record['ID'].'</span><br>';
+               echo '<span class="info-task">' .$record['event'].'</span><br>';
+               echo '<span class="info-task">' .$record['time'].'</span><br>';
+               echo '</div>';}?>
 
         </div>
     </div>
@@ -223,11 +236,31 @@ if($_SERVER['REQUEST_METHOD'] === "GET"&& isset($_GET['btn_del_single'])){
             function closePopup(){
                 popup.classList.remove("open-popup");
                 var blur= document.getElementById('blur');
-                blur.classList.remove('active');
-             
+                blur.classList.remove('active');}
 
+            function closetask(){
+                infobox.classList.remove("info-box")
+             
+                
             }
-           
+ let input = document.getElementById("del_input");
+let button = document.getElementById("btn_del_single");
+
+button.disabled = true; 
+
+input.addEventListener("input", clickdel);
+
+function clickdel() {
+    if (input.value === "") {
+        button.disabled = true; 
+    } else {
+        button.disabled = false; 
+    }
+}
+
+            
+             
+            
     </script>
 
     

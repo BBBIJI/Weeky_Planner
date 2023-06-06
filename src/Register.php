@@ -10,9 +10,10 @@ if($conn->connect_error){
     $stmt = $conn->prepare("insert into login(Username, Password) values(?,?)");
     $stmt->bind_param("ss",$Username,$Password);
     $stmt->execute();
-    echo "registetration success";
+    echo "registration success";
     $stmt->close();
     $conn->close();
+    
 }
 ?>
 

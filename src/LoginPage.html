@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head><title>WEEKLY PLANNER</title>
-    <h1>LOGIN PAGE</h1>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="login.css"   >
     </head>
+    <body >
+            <form class="login" >
+              
+                <br>
+                <form name="f1" action = "Authentication.php" onsubmit = "return validate()" method = "post">
+                    <h2 id="signin1"><p>LOG IN</p></h2>
+                    <label for = "Username">Username:</label>
+                    <input type = "text" id = "Username" name = "Username">
+                <br>
+                <br>
+                <label for = "Password">Password:</label>
+                    <input type = "password" id = "Password" name = "Password">
+                    <br>
+                    <br>
+                    <a href="project1.php">
+                    <input  class="box-color1"type="submit" value = "Login">
+                    </a>
+                    <a href="registerform.html">
+                        <input class="box-color1"type ="button" value="Register">
+                    </a>
+                   </form>
+            </form>
 
-    <body>
-        <form name="f1" action = "Authentication.php" onsubmit = "return validate()" method = "post">
-            <label for = "Username">Username</label><br>
-            <input type = "text" id = "Username" name = "Username"><br>
-            <label for = "Password">Password</label><br>
-            <input type = "password" id = "Password" name = "Password"><br>
-            <input type="submit" value = "Login">
-            <a href="registerform.html">
-                <input type ="button" value="Register">
-            </a>
-        </form>
+            <script>
+                function validate(){
+                var id=document.f1.Username.value;
+                var ps=document.f1.Password.value;
+    
+                if(ps.length=="" && id.length==""){
+                    alert("Username and Password cannot be empty");
+                    return false;
+                }else if(id.length==""){
+                    alert("Username cannot be empty");
+                    return false;
+                }else if(ps.length==""){
+                    alert("Password cannot be empty");
+                    return false;
+                }}
+                </script>
+
+  
         
-        <script>
-            function validate(){
-            var id=document.f1.Username.value;
-            var ps=document.f1.Password.value;
-
-            if(ps.length=="" && id.length==""){
-                alert("Username and Password cannot be empty");
-                return false;
-            }else if(id.length==""){
-                alert("Username cannot be empty");
-                return false;
-            }else if(ps.length==""){
-                alert("Password cannot be empty");
-                return false;
-            }}
-            </script>
-
+        
+        
     </body>
 </html>
