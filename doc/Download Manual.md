@@ -29,6 +29,8 @@ Etihter use windows built in file extracter or use any third party software.
 
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/239705e3-f9f1-4dca-bea4-8d7f51d03bde)
 
+Start Apache + MySQL
+
 7. Done(Proceed to user manual).
 
 database setup:
@@ -46,7 +48,7 @@ database setup:
 4. choose, the database, import the sql file into MyPhpadmin
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/59b9f520-37ef-4e4b-9a98-eebd977fd0b0)
 
-5. done, databse setup complete
+5. done, database setup complete
 
 
 
