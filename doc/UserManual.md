@@ -4,27 +4,27 @@
 2. Type localhost/LoginPage.html on your own browser search bar.
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/2d148050-6c8d-4cbb-bcdc-542abf8786ca)
 A login page will appear.
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/2259d6be-3f28-4172-80d3-d9cfefcd3765)
-
+<img width="950" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/1b0a5cb7-8d36-4aa1-8822-843d1e74eafc">
 3. Go click register.
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/9d389391-284c-460f-8657-8b48c3608eba)
-
+<img width="947" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/a932e7fd-c283-4728-ad71-ba8a80399fe3">
 4. Enter account information
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/8bd0fb87-fcdd-42e5-8c0e-4c79ffb0e94d)
-Once registration is finished shows message "registration success", and a button will show which if you click it will send you back to the login page.
+<img width="890" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/edbce040-97b3-4e07-800c-462738ab6446">
+Once registration is finished shows message "registration success", and you need to go back to the login page.
 
 5. After you logged in, you will see the weekly planner website
-<img width="947" alt="Screenshot 2023-06-01 231839" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/b48d17d5-2f39-40d0-acde-29354d596da6">
+<img width="943" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/d5806fb8-d901-479e-ad4a-9ce2b9152096">
 
 6. to Add an event into the boxes below, simply click the add button
-<img width="949" alt="Screenshot 2023-06-01 231942" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/c199ce01-3480-4035-8224-889ce903bf1d">
+<img width="944" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/582ef4ae-8cab-4cd1-8530-ffcdd45eed14">
 a popup will appear
 
 7. enter your information, and then press submit
-<img width="948" alt="Screenshot 2023-06-01 232022" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/e92f934f-2e33-48fa-924e-2729762c3b0d">
-the layout is as the following
+<img width="943" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/ee319a3c-9344-4577-b293-ecd8720e191f">
+the layout will be as the following
 
-8. to delete just simply click the "DELETE ALL" and all the events will be deleted, or enter the id of one of the events and choose delete, to delte a single event with that id number.
+8. to delete just simply click the "DELETE ALL" and all the events will be deleted, or enter the id of one of the events and choose delete, to delete a single event with that id number.
+<img width="944" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/6f857b2a-5755-433a-aae8-19da34b3cb3e">
+
 
 9. Done!.
 
