@@ -8,16 +8,20 @@
 
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/36a97fd0-a6f9-4f7b-a251-f97ae4ab896a)
 
-4. After downloading extract file into a folder of your choosing.
+4. After downloading, extract the files into a folder of your choosing.
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/758a1773-d9c3-4245-b5fb-7b7d36b1e70d)
 
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/99657b88-9252-4500-a26c-614e441f08ad)
 Etihter use windows built in file extracter or use any third party software.
 
-5. Oo to your xampp download folder and find "htdocs" folder, place all the files in the folder.
+5. Go to your xampp download folder and find "htdocs" folder, then create a new folder to place the extracted files.
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/e079f84b-d5c5-45dd-910d-fa75a9d470ad)
 
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/bc02bfb6-eb49-477a-aa83-ff20e8144c03)
+<img width="690" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/3b6a1fea-c3ae-44d0-b84d-08740a5fbe94">
+
+<img width="727" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/ef3bd3ca-f5cc-445b-a6ce-c95174b14da8">
+
+
 (by deafult there will be a few files in the folder already, you are free to delete the files or not, but don't delete the folders)
 
 6. run xampp.
@@ -28,8 +32,8 @@ Etihter use windows built in file extracter or use any third party software.
 7. Done(Proceed to user manual).
 
 database setup:
-1. get the sql file from the repo
-![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/daea6302-f5a4-40db-bcc0-09b22ac8a25f)
+1. get the sql file from the repository
+<img width="520" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/77fd15e8-639b-439e-b7ca-2d59aa488367">
 
 2. go to xampp control panel and choose MYSQL admin
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/38ab4bde-cb68-4b2c-9289-ef5d0e590b6c)
