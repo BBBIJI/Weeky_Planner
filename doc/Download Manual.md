@@ -27,6 +27,25 @@ Etihter use windows built in file extracter or use any third party software.
 
 7. Done(Proceed to user manual).
 
+database setup:
+1. get the sql file from the repo
+![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/daea6302-f5a4-40db-bcc0-09b22ac8a25f)
+
+2. go to xampp control panel and choose MYSQL admin
+![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/38ab4bde-cb68-4b2c-9289-ef5d0e590b6c)
+
+3. make a new database with the name "user".
+![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/2399e0fb-834a-4590-83db-0b28e67e6c77)
+
+![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/e3f5e8ef-6e43-492c-b62f-3f4c6d29c598)
+
+4. choose, the database, import the sql file into MyPhpadmin
+![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/59b9f520-37ef-4e4b-9a98-eebd977fd0b0)
+
+5. done, databse setup complete
+
+
+
 
 
 
