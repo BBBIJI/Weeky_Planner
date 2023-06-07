@@ -1,8 +1,13 @@
 1. In xampp control panel software turn on mysql and apache services.
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/3fbd31b4-531e-42b2-b640-4db253dbaa8f)
 
-2. Type localhost/LoginPage.html on your own browser search bar.
+2. Type localhost on your own browser search bar. then click your new folder name and click LoginPage.html
 ![image](https://github.com/BBBIJI/Weeky_Planner/assets/79928119/2d148050-6c8d-4cbb-bcdc-542abf8786ca)
+
+<img width="427" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/23290cf2-db49-4a74-b763-0e1b1dc8c3ab">
+
+<img width="312" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/44bc9c6b-4acd-49e1-bd42-76ed83c0b751">
+
 
 A login page will appear.
 <img width="950" alt="image" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/1b0a5cb7-8d36-4aa1-8822-843d1e74eafc">
