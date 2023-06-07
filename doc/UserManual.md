@@ -24,7 +24,7 @@ a popup will appear
 <img width="948" alt="Screenshot 2023-06-01 232022" src="https://github.com/BBBIJI/Weeky_Planner/assets/133724964/e92f934f-2e33-48fa-924e-2729762c3b0d">
 the layout is as the following
 
-8. to delete just simply click the "DELETE ALL" and all the events will be deleted(single event delete function coming soon).
+8. to delete just simply click the "DELETE ALL" and all the events will be deleted, or enter the id of one of the events and choose delete, to delte a single event with that id number.
 
 9. Done!.
 
